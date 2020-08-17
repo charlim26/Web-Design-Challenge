@@ -8,14 +8,19 @@
 
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-   <!-- Define the Navigation Bar -->   
-   
+   <!-- Define the Navigation Bar --> 
+     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0" href="./index.html">Latitude</a>
 
@@ -38,7 +43,6 @@
               <a class="dropdown-item" href="./wind.html">Windspeed Plot</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="./index.html">Back to Home Page</a>
-
             </div>
           </li>
 					
@@ -63,18 +67,17 @@
     <section class="row">
       <div class="col-lg-7 col-md-12">
           <div class="plot-content">
-            <h1 class="plot-header">Summary: Latitiude vs. X</h1>
+            <h1 class="plot-header">Humidity</h1>
             <hr>
+            <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="other-image">
 
-            <!-- <img src="./visualisations/Clouds_plot.png" alt="Latitude vs. Cloudiness" id="other-image"> -->
-            <img src="Resources/assets/images/Fig3.png" class="img-responsive" width=70% height="auto">
-         
-          <p>
-
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-        
-            
+            <p>
+              The humidity level does not appear to be strongly correlated with latitude based on this plot.  
+              There is some evidence that cities at the higher latitude are more humid.  However, I don't believe
+              we can come to a conclusion based on this plot, as the underlying data was just a snapshot
+              of wether conditions based on a particular day and time.  Further research would be needed
+              to make valid conclusion.
+            </p>
             
           </div>
         </div>
@@ -89,27 +92,32 @@
 
             <div class="row">
 
-              <div class="col-6">
+              <div class="col-lg-6 col-md-12">
+                <div class="comp-title">vs. Max Temperature</div>
                 <a href="./temp.html">
-                <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="vis-image">
+                  <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="comp-image" >
                 </a>
               </div>
+              
           
-              <div class="col-6">
+              <div class="col-lg-6 col-md-12">
+                <div class="comp-title">vs. Humidity</div>
                 <a href="./humidity.html">
-                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="vis-image">
+                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="comp-image">
                 </a>
               </div>
           
-              <div class="col-6">
-                <a href="./cloud.html">
-                 <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" id="vis-image">
+              <div class="col-lg-6 col-md-12">
+                <div class="comp-title">vs. Cloudiness</div>
+                <a href="./clouds.html">
+                <img src="Resources/assets/images/Fig3.png"alt="Latitude vs. Cloudiness" id="comp-image">
                 </a>
               </div>
-
-              <div class="col-6">
+  
+              <div class="col-lg-6 col-md-12">
+                <div class="comp-title">vs. Wind Speed</div>
                 <a href="./wind.html">
-                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="vis-image">
+                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="comp-image">
                 </a>
               </div>
             </div>  
@@ -117,11 +125,8 @@
         
         </div>
       </div>
-  </div>  
-
+    </div>  
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 
 </html>
