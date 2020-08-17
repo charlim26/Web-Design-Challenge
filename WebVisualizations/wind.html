@@ -19,8 +19,8 @@
 
   <body>
 
-  <!-- Define the Navigation Bar -->  
-  
+   <!-- Define the Navigation Bar --> 
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0" href="./index.html">Latitude</a>
 
@@ -33,7 +33,8 @@
         <!--<ul class="navbar-nav mr-auto"> -->
 				<ul class=" nav navbar-nav ml-auto">  
         	<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -44,6 +45,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="./index.html">Back to Home Page</a>
             </div>
+          </li>
           </li>
 					
 					<li class="nav-item active">
@@ -60,16 +62,33 @@
     </nav>
 
 
+<!-- define the container to hold the temperature plot with description and the visualisations plots -->
+<!-- this first section creates the example plot and the description -->   
+
+<div class="container">
+  <section class="row">
+    <div class="col-lg-7 col-md-12">
+        <div class="plot-content">
+          <h1 class="plot-header">Wind Speed</h1>
+          <hr>
+          <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="other-image">
+
+          <p>
+            This plot does show that the highest wind speeds were for cities at the highest latitudes, while  
+            we did not see these high wind speeds at the lower latitudes.  However, I don't think this is 
+            enough to make any conclusions, as the data was collected on just one day and time.  Across the 
+            lower latitudes, there seems to be a fairly consitent distribution of wind speed.   
+          </p>
+          
+        </div>
+      </div>
     
-<!-- this section creates the comparison plots on the right --> 
+<!-- this section creates the visualization plots on the right --> 
 
-    <div class="col-12">
-      <div class="compplot-content">
-        <h2 class="plot-header">Comparison: Latitude vs X</h2>
+    <div class="col-lg-5 col-md-12">
+      <div class="visplot-content">
+        <h2 class="plot-header">Visualizations</h2>
         <hr>
-
-        <p> Click any plot to get an in-depth analysis</p>
-
         <div class="container">
 
           <div class="row">
@@ -107,7 +126,8 @@
       
       </div>
     </div>
-</div>  
+  </div>  
+        
 
   </body>
     
