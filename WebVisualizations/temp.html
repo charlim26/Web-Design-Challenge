@@ -21,7 +21,7 @@
 
    <!-- Define the Navigation Bar --> 
      
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0" href="./index.html">Latitude</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,16 +67,15 @@
     <section class="row">
       <div class="col-lg-7 col-md-12">
           <div class="plot-content">
-            <h1 class="plot-header">Humidity</h1>
+            <h1 class="plot-header">Max Temperature</h1>
             <hr>
-            <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="other-image">
+            <img src="./visualisations/temperature_plot.png" alt="Latitude vs. Temperature" id="other-image">
 
             <p>
-              The humidity level does not appear to be strongly correlated with latitude based on this plot.  
-              There is some evidence that cities at the higher latitude are more humid.  However, I don't believe
-              we can come to a conclusion based on this plot, as the underlying data was just a snapshot
-              of wether conditions based on a particular day and time.  Further research would be needed
-              to make valid conclusion.
+              As expected, the temperature increases on one approaches the equator (0 Degrees Latitude) and gets 
+              colder as you approach the northern (+90) and southern(-90) poles.  The plot seems to suggest that 
+              temperature at the southern pole is not as extreme, however, this is misleading as there are no 
+              measurment shows for lattitude below -60, as there are very few cities in this region.
             </p>
             
           </div>
@@ -92,32 +91,27 @@
 
             <div class="row">
 
-              <div class="col-lg-6 col-md-12">
-                <div class="comp-title">vs. Max Temperature</div>
+              <div class="col-6">
                 <a href="./temp.html">
-                  <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="comp-image" >
+                <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="vis-image">
                 </a>
               </div>
-              
           
-              <div class="col-lg-6 col-md-12">
-                <div class="comp-title">vs. Humidity</div>
+              <div class="col-6">
                 <a href="./humidity.html">
-                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="comp-image">
+                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="vis-image">
                 </a>
               </div>
           
-              <div class="col-lg-6 col-md-12">
-                <div class="comp-title">vs. Cloudiness</div>
-                <a href="./clouds.html">
-                <img src="Resources/assets/images/Fig3.png"alt="Latitude vs. Cloudiness" id="comp-image">
+              <div class="col-6">
+                <a href="./cloud.html">
+                 <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" id="vis-image">
                 </a>
               </div>
-  
-              <div class="col-lg-6 col-md-12">
-                <div class="comp-title">vs. Wind Speed</div>
+
+              <div class="col-6">
                 <a href="./wind.html">
-                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="comp-image">
+                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="vis-image">
                 </a>
               </div>
             </div>  
@@ -125,7 +119,8 @@
         
         </div>
       </div>
-    </div>  
+  </div>  
+
   </body>
     
 
