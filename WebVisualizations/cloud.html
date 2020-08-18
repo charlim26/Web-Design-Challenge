@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Web Challenge - Humiditity</title>
+    <title>Web Challenege - Cloudiness</title>
 
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,7 +20,7 @@
   <body>
 
    <!-- Define the Navigation Bar --> 
-     
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0" href="./index.html">Latitude</a>
 
@@ -33,17 +33,19 @@
         <!--<ul class="navbar-nav mr-auto"> -->
 				<ul class=" nav navbar-nav ml-auto">  
         	<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="./temp.html">Max Temperature Plot</a>
               <a class="dropdown-item" href="./humidity.html">Humidity Plot</a>
-              <a class="dropdown-item" href="./cloud.html">Cloudiness Plot</a>
+              <a class="dropdown-item" href="./clouds.html">Cloudiness Plot</a>
               <a class="dropdown-item" href="./wind.html">Wind Speed Plot</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="./index.html">Back to Home Page</a>
             </div>
+          </li>
           </li>
 					
 					<li class="nav-item active">
@@ -59,69 +61,74 @@
       </div>
     </nav>
 
-   
+
 <!-- define the container to hold the temperature plot with description and the visualisations plots -->
 <!-- this first section creates the example plot and the description -->   
 
-  <div class="container">
-    <section class="row">
-      <div class="col-lg-7 col-md-12">
-          <div class="plot-content">
-            <h1 class="plot-header">Humidity</h1>
-            <hr>
-            <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="other-image">
-
-            <p>
-              The humidity level does not appear to be strongly correlated with latitude based on this plot.  
-              There is some evidence that cities at the higher latitude are more humid.  However, I don't believe
-              we can come to a conclusion based on this plot, as the underlying data was just a snapshot
-              of wether conditions based on a particular day and time.  Further research would be needed
-              to make valid conclusion.
-            </p>
-            
-          </div>
-        </div>
-      
-<!-- this section creates the visualization plots on the right --> 
-
-      <div class="col-lg-5 col-md-12">
-        <div class="visplot-content">
-          <h2 class="plot-header">Visualizations</h2>
+<div class="container">
+  <section class="row">
+    <div class="col-lg-7 col-md-12">
+        <div class="plot-content">
+          <h1 class="plot-header">Cloudiness</h1>
           <hr>
-          <div class="container">
+          <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" id="other-image">
 
-            <div class="row">
-
-              <div class="col-lg-6 col-md-12">
-                 <a href="./temp.html">
-                  <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="comp-image" >
-                </a>
-              </div>
-              
+          <p>
+            This plot does show that the highest wind speeds were for cities at the highest latitudes, while  
+            we did not see these high wind speeds at the lower latitudes.  However, I don't think this is 
+            enough to make any conclusions, as the data was collected on just one day and time.  Across the 
+            lower latitudes, there seems to be a fairly consitent distribution of wind speed.   
+          </p>
           
-              <div class="col-lg-6 col-md-12">
-                <a href="./humidity.html">
-                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="comp-image">
-                </a>
-              </div>
-          
-              <div class="col-lg-6 col-md-12">
-                <a href="./cloud.html">
-                <img src="Resources/assets/images/Fig3.png"alt="Latitude vs. Cloudiness" id="comp-image">
-                </a>
-              </div>
-  
-              <div class="col-lg-6 col-md-12">
-                <a href="./wind.html">
-                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="comp-image">
-                </a>
-              </div>
-            </div>  
-        </div>
-        
         </div>
       </div>
-    </div>  
+    
+<!-- this section creates the visualization plots on the right --> 
+
+    <div class="col-lg-5 col-md-12">
+      <div class="visplot-content">
+        <h2 class="plot-header">Visualizations</h2>
+        <hr>
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-6 col-md-12">
+              <div class="comp-title">vs. Max Temperature</div>
+              <a href="./temp.html">
+                <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="comp-image" >
+              </a>
+            </div>
+            
+        
+            <div class="col-lg-6 col-md-12">
+              <div class="comp-title">vs. Humidity</div>
+              <a href="./humidity.html">
+              <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="comp-image">
+              </a>
+            </div>
+        
+            <div class="col-lg-6 col-md-12">
+              <div class="comp-title">vs. Cloudiness</div>
+              <a href="./cloud.html">
+              <img src="Resources/assets/images/Fig3.png"alt="Latitude vs. Cloudiness" id="comp-image">
+              </a>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <div class="comp-title">vs. Wind Speed</div>
+              <a href="./wind.html">
+              <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Wind Speed" id="comp-image">
+              </a>
+            </div>
+          </div>  
+      </div>
+      
+      </div>
+    </div>
+  </div>  
+        
+
   </body>
     
 
