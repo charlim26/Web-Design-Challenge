@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Challenge</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+   <!-- Define the Navigation Bar -->   
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0" href="./index.html">Latitude</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+			        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--<ul class="navbar-nav mr-auto"> -->
+				<ul class=" nav navbar-nav ml-auto">  
+        	<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./temp.html">Max Temperature Plot</a>
+              <a class="dropdown-item" href="./humidity.html">Humidity Plot</a>
+              <a class="dropdown-item" href="./clouds.html">Cloudiness Plot</a>
+              <a class="dropdown-item" href="./wind.html">Wind Speed Plot</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./index.html">Back to Home Page</a>
+        
+
+            </div>
+          </li>
+					
+					<li class="nav-item active">
+            <a class="nav-link" href="./comparison.html">Comparison <span class="sr-only">(current)</span></a>
+					</li>
+					
+          <li class="nav-item">
+            <a class="nav-link" href="./data.html">Data</a>
+          </li>
+
+        </ul>
+                    
+      </div>
+    </nav>
+
+   
+<!-- define the container to hold the temperature plot with description and the visualisations plots -->
+<!-- this first section creates the example plot and the description -->   
+
+  <div class="container">
+    <section class="row">
+      <div class="col-lg-7 col-md-12">
+          <div class="plot-content">
+            <h1 class="plot-header">Summary: Latitiude vs. X</h1>
+            <hr>
+
+            <!-- <img src="./visualisations/Clouds_plot.png" alt="Latitude vs. Cloudiness" id="other-image"> -->
+            <img src="Resources/assets/images/Fig3.png" class="img-responsive" width=70% height="auto">
+         
+          <p>
+
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        
+            
+            
+          </div>
+        </div>
+      
+<!-- this section creates the visualization plots on the right --> 
+
+      <div class="col-lg-5 col-md-12">
+        <div class="visplot-content">
+          <h2 class="plot-header">Visualizations</h2>
+          <hr>
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-6">
+                <a href="./temp.html">
+                <img src="Resources/assets/images/Fig1.png"  alt="Latitude vs. Temperature" id="vis-image">
+                </a>
+              </div>
+          
+              <div class="col-6">
+                <a href="./humidity.html">
+                <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="vis-image">
+                </a>
+              </div>
+          
+              <div class="col-6">
+                <a href="./cloud.html">
+                 <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" id="vis-image">
+                </a>
+              </div>
+
+              <div class="col-6">
+                <a href="./wind.html">
+                <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" id="vis-image">
+                </a>
+              </div>
+            </div>  
+        </div>
+        
+        </div>
+      </div>
+  </div>  
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
