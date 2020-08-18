@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <title>Web Challenge - Humiditity</title>
 
-    <!-- Bring in our bootstrap stylesheet -->
+  <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,7 +19,8 @@
 
   <body>
 
-   <!-- Define the Navigation Bar --> 
+ 
+    <!-- Navigation Bar --> 
      
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0" href="./index.html">Latitude</a>
@@ -59,11 +60,9 @@
       </div>
     </nav>
 
-   
-<!-- define the container to hold the temperature plot with description and the visualisations plots -->
-<!-- this first section creates the example plot and the description -->   
+<!-- Plot with summary description -->   
 
-  <div class="container">
+   <div class="container">
     <section class="row">
       <div class="col-lg-7 col-md-12">
           <div class="plot-content">
@@ -72,17 +71,17 @@
             <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" id="other-image">
 
             <p>
-              The humidity level does not appear to be strongly correlated with latitude based on this plot.  
-              There is some evidence that cities at the higher latitude are more humid.  However, I don't believe
-              we can come to a conclusion based on this plot, as the underlying data was just a snapshot
-              of wether conditions based on a particular day and time.  Further research would be needed
+              The humidity level does not have a strongly correlated with latitude based on the plot.  
+              Some cirties at a higher latitude tend to be more humid, but there is not a clear way to concluded              we can come to a conclusion based on this plot, as the underlying data was just a snapshot
+              based on a data for this period. Addtional research would be needed
               to make valid conclusion.
             </p>
             
           </div>
         </div>
       
-<!-- this section creates the visualization plots on the right --> 
+
+<!-- Visualization plots --> 
 
       <div class="col-lg-5 col-md-12">
         <div class="visplot-content">
